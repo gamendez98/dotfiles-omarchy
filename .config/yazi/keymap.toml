@@ -34,10 +34,10 @@ keymap = [
 
 	# Navigation
 	{ on = "h", run = ["shell -- zoxide add $(dirname '$0')", "leave"], desc = "Back to the parent directory" },
-	{ on = "l", run = ["shell -- [ -d $0 ] && zoxide add $0", "enter"], desc = "Enter the child directory" },
+	{ on = "l", run = ['''shell -- if [ -d "$0" ]; then zoxide add "$0"; fi''', "enter"], desc = "Enter the child directory" },
 
 	{ on = "<Left>",  run = ["shell -- zoxide add $(dirname '$0')", "leave"], desc = "Back to the parent directory" },
-	{ on = "<Right>", run = ["shell -- [ -d $0 ] && zoxide add $0", "enter"], desc = "Enter the child directory" },
+	{ on = "<Right>", run = ['''shell -- if [ -d "$0" ]; then zoxide add "$0"; fi''', "enter"], desc = "Enter the child directory" },
 
 	{ on = "H", run = "back",    desc = "Back to previous directory" },
 	{ on = "L", run = "forward", desc = "Forward to next directory" },
