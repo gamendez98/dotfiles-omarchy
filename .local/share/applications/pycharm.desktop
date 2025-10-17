@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=PyCharm
+Exec=env GDK_SCALE=1 GDK_DPI_SCALE=0.8 "/home/gamendez/.local/share/JetBrains/Toolbox/apps/pycharm/bin/pycharm" %u
+Version=1.0
+Type=Application
+Categories=Development;IDE;
+Terminal=false
+Icon=/home/gamendez/.local/share/JetBrains/Toolbox/apps/pycharm/bin/pycharm.svg
+Comment=The Only Python IDE you need
+StartupWMClass=jetbrains-pycharm
+StartupNotify=true
